@@ -6,27 +6,81 @@
       <RowDefinition Height="Auto" />
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
-    <MenuBar VerticalAlignment="Top">
-      <MenuBarItem Grid.Row="0" Title="File" AccessKey="F">
-        <MenuFlyoutItem Text="Open" Icon="OpenFile">
+    <MenuBar Grid.Row="0" VerticalAlignment="Top">
+      <MenuBarItem Title="File" AccessKey="F">
+        <MenuFlyoutItem Text="Open File..." Icon="OpenFile">
           <MenuFlyoutItem.KeyboardAccelerators>
             <KeyboardAccelerator Key="O" Modifiers="Control" />
           </MenuFlyoutItem.KeyboardAccelerators>
         </MenuFlyoutItem>
-        <MenuFlyoutSeparator />
-        <MenuFlyoutItem Text="Save" Icon="Save">
+        <MenuFlyoutItem Text="Stage" Icon="SaveLocal">
           <MenuFlyoutItem.KeyboardAccelerators>
             <KeyboardAccelerator Key="S" Modifiers="Control" />
           </MenuFlyoutItem.KeyboardAccelerators>
         </MenuFlyoutItem>
+        <MenuFlyoutItem Text="Ignore" Icon="Important">
+          <MenuFlyoutItem.KeyboardAccelerators>
+            <KeyboardAccelerator Key="I" Modifiers="Control" />
+          </MenuFlyoutItem.KeyboardAccelerators>
+        </MenuFlyoutItem>
+        <MenuFlyoutSeparator />
         <MenuFlyoutSubItem Text="Demo">
           <MenuFlyoutItem Text="A" />
           <MenuFlyoutItem Text="B" />
           <MenuFlyoutItem Text="C" />
         </MenuFlyoutSubItem>
       </MenuBarItem>
+      <MenuBarItem Title="Repo" AccessKey="R">
+        <MenuFlyoutItem Text="Open Repo..." Icon="OpenFile">
+          <MenuFlyoutItem.KeyboardAccelerators>
+            <KeyboardAccelerator Key="O" Modifiers="Control" />
+          </MenuFlyoutItem.KeyboardAccelerators>
+        </MenuFlyoutItem>
+        <MenuFlyoutItem Text="Stage All Changes" Icon="SaveLocal">
+          <MenuFlyoutItem.KeyboardAccelerators>
+            <KeyboardAccelerator Key="S" Modifiers="Control" />
+          </MenuFlyoutItem.KeyboardAccelerators>
+        </MenuFlyoutItem>
+        <MenuFlyoutItem Text="Commit Staged" Icon="Edit">
+          <MenuFlyoutItem.KeyboardAccelerators>
+            <KeyboardAccelerator Key="C" Modifiers="Control" />
+          </MenuFlyoutItem.KeyboardAccelerators>
+        </MenuFlyoutItem>
+        <MenuFlyoutSeparator></MenuFlyoutSeparator>
+        <MenuFlyoutItem Text="Push..." Icon="Upload">
+          <MenuFlyoutItem.KeyboardAccelerators>
+            <KeyboardAccelerator Key="P" Modifiers="Control" />
+          </MenuFlyoutItem.KeyboardAccelerators>
+        </MenuFlyoutItem>
+        <MenuFlyoutItem Text="Fetch..." Icon="Download">
+          <MenuFlyoutItem.KeyboardAccelerators>
+            <KeyboardAccelerator Key="F" Modifiers="Control" />
+          </MenuFlyoutItem.KeyboardAccelerators>
+        </MenuFlyoutItem>
+        <MenuFlyoutItem Text="Pull..." Icon="Import">
+          <MenuFlyoutItem.KeyboardAccelerators>
+            <KeyboardAccelerator Key="L" Modifiers="Control" />
+          </MenuFlyoutItem.KeyboardAccelerators>
+        </MenuFlyoutItem>
+        <MenuFlyoutSeparator></MenuFlyoutSeparator>
+        <MenuFlyoutItem Text="Add .gitignore" Icon="Important">
+          <MenuFlyoutItem.KeyboardAccelerators>
+            <KeyboardAccelerator Key="I" Modifiers="Control" />
+          </MenuFlyoutItem.KeyboardAccelerators>
+        </MenuFlyoutItem>
+        <MenuFlyoutItem Text="Add LICENSE" Icon="Bookmarks">
+          <MenuFlyoutItem.KeyboardAccelerators>
+            <KeyboardAccelerator Key="L" Modifiers="Control" />
+          </MenuFlyoutItem.KeyboardAccelerators>
+        </MenuFlyoutItem>
+        <MenuFlyoutItem Text="Add README.md" Icon="Document">
+          <MenuFlyoutItem.KeyboardAccelerators>
+            <KeyboardAccelerator Key="R" Modifiers="Control" />
+          </MenuFlyoutItem.KeyboardAccelerators>
+        </MenuFlyoutItem>
+      </MenuBarItem>
       <MenuBarItem Title="Help" AccessKey="H">
-        <MenuFlyoutItem Text="About" />
+        <MenuFlyoutItem Text="About" Icon="Emoji2" />
       </MenuBarItem>
     </MenuBar>
     <StackPanel Grid.Row="1" Orientation="Horizontal">
