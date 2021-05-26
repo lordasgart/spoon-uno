@@ -84,8 +84,36 @@
       </MenuBarItem>
     </MenuBar>
     <StackPanel Grid.Row="1" Orientation="Horizontal">
-      <Button Content="Button1"></Button>
-      <Button Content="Button2"></Button>
+      <Button>
+        <StackPanel>
+          <SymbolIcon Symbol="Download" />
+          <TextBlock>Fetch</TextBlock>
+        </StackPanel>
+      </Button>
+      <Button>
+        <StackPanel>
+          <SymbolIcon Symbol="Import" />
+          <TextBlock>Pull</TextBlock>
+        </StackPanel>
+      </Button>
+      <Button>
+        <StackPanel>
+          <SymbolIcon Symbol="SaveLocal" />
+          <TextBlock>Stage</TextBlock>
+        </StackPanel>
+      </Button>
+      <Button>
+        <StackPanel>
+          <SymbolIcon Symbol="Edit" />
+          <TextBlock>Commit</TextBlock>
+        </StackPanel>
+      </Button>
+      <Button>
+        <StackPanel>
+          <SymbolIcon Symbol="Upload" />
+          <TextBlock>Push</TextBlock>
+        </StackPanel>
+      </Button>
     </StackPanel>
     <Grid Grid.Row="2">
       <Grid.ColumnDefinitions>
