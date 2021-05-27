@@ -91,6 +91,12 @@
     <StackPanel Grid.Row="1" Orientation="Horizontal">
       <Button>
         <StackPanel>
+          <SymbolIcon Symbol="OpenFile" />
+          <TextBlock>Open Repo...</TextBlock>
+        </StackPanel>
+      </Button>
+      <Button>
+        <StackPanel>
           <SymbolIcon Symbol="Download" />
           <TextBlock>Fetch</TextBlock>
         </StackPanel>
