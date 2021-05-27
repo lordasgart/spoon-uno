@@ -36,6 +36,11 @@
             <KeyboardAccelerator Key="O" Modifiers="Control" />
           </MenuFlyoutItem.KeyboardAccelerators>
         </MenuFlyoutItem>
+        <MenuFlyoutItem Text="Clone Repo..." Icon="Copy">
+          <MenuFlyoutItem.KeyboardAccelerators>
+            <KeyboardAccelerator Key="C" Modifiers="Control" />
+          </MenuFlyoutItem.KeyboardAccelerators>
+        </MenuFlyoutItem>
         <MenuFlyoutItem Text="Stage All Changes" Icon="SaveLocal">
           <MenuFlyoutItem.KeyboardAccelerators>
             <KeyboardAccelerator Key="S" Modifiers="Control" />
